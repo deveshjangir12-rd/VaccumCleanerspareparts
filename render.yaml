@@ -1,4 +1,16 @@
 services:
+  # Public storefront. The catalogue currently uses illustrative frontend demo data.
+  - type: web
+    name: vacuumkart
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+  # Optional starter API. It uses temporary in-memory demo data, not a production database.
   - type: web
     name: vacuumkart-api
     runtime: python
@@ -10,4 +22,4 @@ services:
       - key: PYTHON_VERSION
         value: 3.12.7
       - key: CORS_ORIGINS
-        value: https://YOUR-FRONTEND.onrender.com
+        value: https://vacuumkart.onrender.com,http://localhost:5173
