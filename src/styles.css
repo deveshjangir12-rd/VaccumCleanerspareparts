@@ -321,3 +321,22 @@ body{background:radial-gradient(ellipse at 4% 0%,#e3e9ff 0,transparent 34rem),ra
  .help-section{width:calc(100% - 32px);padding:25px 19px}
  .newsletter-section{margin:0 16px 38px;grid-template-columns:minmax(0,1fr);padding:20px 17px}
 }
+
+/* White theme: soft indigo, lavender and mint gradients */
+:root{color-scheme:light}
+body{background:#fff;color:#182744}
+.announcement{background:linear-gradient(90deg,#f0f4ff,#f8f6ff 52%,#eafaf4);color:#455575;border-bottom:1px solid #e8edf8}
+.announcement svg{color:#16a982}.announcement span{color:#667de6}
+.hero{background:radial-gradient(ellipse at 80% 20%,#dfe6ff,transparent 38%),radial-gradient(ellipse at 90% 80%,#dff8ed,transparent 35%),linear-gradient(115deg,#fff,#f8f9ff 48%,#f0fbf6)}
+.hero h1 em,.section-heading h2 em,.fit-copy h2 em,.help-section h2 em,.category-heading h2 em,.promise-intro h2 em{background:linear-gradient(95deg,#4268ed,#8264ed 58%,#13a984);-webkit-background-clip:text;background-clip:text;color:transparent}
+.primary-btn{background:linear-gradient(105deg,#4268ed,#655fe9 58%,#7865ed);box-shadow:0 9px 24px #5a67e92c}
+.category-card{background:linear-gradient(145deg,#fff,#f5f7ff 68%,#eefaf5);border-color:#e5eaf6}
+.cat-wet{background:linear-gradient(145deg,#fff,#f0fbf7)}.cat-wear{background:linear-gradient(145deg,#fff,#fff7ed)}.cat-parts{background:linear-gradient(145deg,#fff,#f5f0ff)}
+.shop-section{background:linear-gradient(180deg,#f7f8ff,#fbfcff 52%,#fff)}
+.fit-section{background:linear-gradient(112deg,#f0f3ff,#f6f3ff 52%,#eafaf4);border:1px solid #e4e8f8}
+.help-section{background:linear-gradient(110deg,#f5f7ff,#fbfaff 52%,#f0fbf6)}
+.newsletter-section{background:linear-gradient(110deg,#f0f3ff,#f6f3ff 55%,#eafaf4);color:#1d2e4c;border:1px solid #e5e9f6;box-shadow:0 15px 40px #263d710b}
+.newsletter-icon{background:#fff;color:#5c6fe8;border:1px solid #e7eafa}.newsletter-section h3{color:#1c2c49}.newsletter-section p{color:#71809b}
+.newsletter-section input{background:#fff;color:#243655;border-color:#dfe5f2}.newsletter-section input::placeholder{color:#98a3b6}
+.newsletter-section form button{background:linear-gradient(105deg,#4268ed,#7865ed);color:#fff}.newsletter-section>small{color:#8491a8}
+@media(max-width:760px){.hero{background:radial-gradient(ellipse at 88% 36%,#e1e7ff,transparent 44%),radial-gradient(ellipse at 12% 80%,#e7f9f1,transparent 40%),linear-gradient(180deg,#fff,#f8f9ff 75%,#f2fbf7)}}
