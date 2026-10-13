@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type FormEvent } from 'react';
 import {
   Search, ShoppingBag, ArrowRight, ShieldCheck, Truck, RotateCcw, Headphones,
   ChevronDown, X, Plus, Minus, CheckCircle2, Menu, SlidersHorizontal, Heart,
@@ -54,7 +54,7 @@ export default function App() {
   function changeQty(id: string, delta: number) {
     setCart(old => old.map(i => i.product.id === id ? { ...i, qty: i.qty + delta } : i).filter(i => i.qty > 0));
   }
-  function saveProduct(e: React.FormEvent<HTMLFormElement>) {
+  function saveProduct(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!editing) return;
     setCatalog(old => old.some(p => p.id === editing.id) ? old.map(p => p.id === editing.id ? editing : p) : [{ ...editing, id: 'local-' + Date.now() }, ...old]);
