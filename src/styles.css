@@ -258,3 +258,9 @@ body:before{opacity:.045}
  .help-section{width:calc(100% - 30px);padding:24px 18px;margin:24px auto;border-radius:20px}
  .fit-section{border-radius:20px}.newsletter-section{border-radius:18px}
 }
+
+/* Layout polish: align the primary sections to a shared content grid. */
+.hero,.category-section,.promise-section{box-sizing:border-box}
+.hero{max-width:1440px;margin-inline:auto}
+.category-section,.promise-section{max-width:1320px;margin-inline:auto}
+.section-heading,.shop-layout{max-width:1264px;margin-inline:auto}
